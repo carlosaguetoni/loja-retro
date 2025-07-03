@@ -85,6 +85,49 @@ main section {
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+.banner {
+  background: url('../assets/imagens/banner-retro.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.novidades {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.novidades h2 {
+  margin-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+}
+
+.novidades ul {
+  list-style-type: square;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
 form button {
   background-color: #222;
   color: white;
@@ -97,11 +140,19 @@ form button {
 /* Rodapé */
 footer {
   text-align: center;
-  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
   font-size: 14px;
-  color: #777;
+  border-radius: 0 0 8px 8px;
 }
 
+.redes-sociais {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #bbb;
+  font-family: Arial, sans-serif;
+}
 /* Responsividade: menu em coluna no mobile */
 @media screen and (max-width: 600px) {
   nav ul {
