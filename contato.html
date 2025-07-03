@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Loja Retrô de Jogos</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Fale Conosco</h1>
+    <form id="formContato" novalidate>
+      <label for="nome">Nome:</label><br />
+      <input type="text" id="nome" name="nome" /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="mensagem">Mensagem:</label><br />
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea><br /><br />
+
+      <button type="submit">Enviar</button>
+      <p id="erro" style="color:red;"></p>
+      <p id="sucesso" style="color:green;"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Loja Retrô de Jogos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
