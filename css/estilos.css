@@ -86,13 +86,17 @@ main section {
 }
 
 .banner {
-  background: url('../assets/imagens/banner-retro.jpg') no-repeat center center/cover;
+  background: url('../assets/imagens/pacmanbanner.jpg') no-repeat center center/cover;
   color: white;
   padding: 80px 20px;
   text-align: center;
   border-radius: 8px;
   margin-bottom: 40px;
   font-family: 'Courier New', Courier, monospace;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner h1 {
