@@ -1,11 +1,11 @@
-/* Reset básico */
+/* Reset básico: remove margens e padding padrão e define box-sizing para facilitar o cálculo de tamanhos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Estilo do corpo da página: fonte, cor de fundo e espaçamento */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -14,12 +14,13 @@ body {
   padding: 10px;
 }
 
-/* Cabeçalho e menu */
+/* Cabeçalho e menu: cor de fundo e espaçamento */
 header {
   background-color: #222;
   padding: 10px 0;
 }
 
+/* Lista do menu: sem marcadores, exibida em linha com espaçamento */
 nav ul {
   list-style: none;
   display: flex;
@@ -27,6 +28,7 @@ nav ul {
   gap: 30px;
 }
 
+/* Links do menu: cor branca, sem sublinhado, negrito e tamanho */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -34,11 +36,12 @@ nav ul li a {
   font-size: 18px;
 }
 
+/* Cor do link muda ao passar o mouse */
 nav ul li a:hover {
   color: #ff9800;
 }
 
-/* Conteúdo principal */
+/* Conteúdo principal: largura máxima, centralizado, com fundo branco, padding e bordas arredondadas */
 main {
   max-width: 1000px;
   margin: 20px auto;
@@ -47,7 +50,7 @@ main {
   border-radius: 8px;
 }
 
-/* Estilo para seção dentro do main (página Sobre) */
+/* Estilo para seções dentro do main, com largura menor, centralizado e espaçamento */
 main section {
   max-width: 800px;
   margin: 20px auto;
@@ -56,6 +59,7 @@ main section {
   color: #444;
 }
 
+/* Lista de jogos: flexbox com espaçamento e quebra de linha */
 .jogos-lista {
   display: flex;
   gap: 20px;
@@ -63,6 +67,7 @@ main section {
   justify-content: center;
 }
 
+/* Card individual do jogo: fundo branco, padding, borda arredondada, sombra leve, tamanho fixo e cursor de mão */
 .jogo-card {
   background: white;
   padding: 15px;
@@ -74,17 +79,20 @@ main section {
   transition: transform 0.3s ease;
 }
 
+/* Imagem do jogo dentro do card: largura máxima e cantos arredondados */
 .jogo-card img {
   max-width: 100%;
   border-radius: 5px;
 }
 
+/* Efeito hover e foco nos cards: aumenta tamanho e sombra mais forte */
 .jogo-card:hover,
 .jogo-card:focus {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* Banner principal: imagem de fundo com posição e tamanho, texto branco, padding grande e centralizado, fonte monoespaçada */
 .banner {
   background: url('../assets/imagens/pacmanbanner.jpg') no-repeat center center/cover;
   color: white;
@@ -97,19 +105,24 @@ main section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* sombra interna para melhorar legibilidade do texto */
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.6);
 }
 
+/* Título do banner: tamanho grande e sombra para destaque */
 .banner h1 {
   font-size: 3rem;
   text-shadow: 2px 2px 4px #000;
 }
 
+/* Parágrafo do banner: tamanho médio, margem e sombra */
 .banner p {
   font-size: 1.2rem;
   margin-top: 10px;
   text-shadow: 1px 1px 2px #000;
 }
 
+/* Seção novidades: largura limitada, centralizado, fundo branco, padding e sombra */
 .novidades {
   max-width: 600px;
   margin: 0 auto 50px auto;
@@ -119,12 +132,14 @@ main section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Título da seção novidades: margem inferior e fonte monoespaçada */
 .novidades h2 {
   margin-bottom: 15px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.8rem;
 }
 
+/* Lista da seção novidades: marcador quadrado, padding à esquerda, tamanho e cor da fonte */
 .novidades ul {
   list-style-type: square;
   padding-left: 20px;
@@ -132,6 +147,7 @@ main section {
   color: #333;
 }
 
+/* Botão do formulário: cor de fundo escura, texto branco, padding, sem borda, bordas arredondadas, cursor pointer e transição suave */
 form button {
   background-color: #222;
   color: white;
@@ -141,7 +157,8 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-/* Rodapé */
+
+/* Rodapé: texto centralizado, padding, fundo escuro, cor clara, fonte pequena e bordas arredondadas no canto inferior */
 footer {
   text-align: center;
   padding: 20px;
@@ -151,13 +168,15 @@ footer {
   border-radius: 0 0 8px 8px;
 }
 
+/* Área das redes sociais: margem superior, tamanho da fonte, cor mais clara e fonte Arial */
 .redes-sociais {
   margin-top: 8px;
   font-size: 1rem;
   color: #bbb;
   font-family: Arial, sans-serif;
 }
-/* Responsividade: menu em coluna no mobile */
+
+/* Responsividade: no máximo 600px de largura, o menu vira coluna e o espaçamento diminui */
 @media screen and (max-width: 600px) {
   nav ul {
     flex-direction: column;
